@@ -1,0 +1,284 @@
+/* #1D1616 #8E1616 #D84040 #EEEEEE */
+/* font-family: "Roboto", sans-serif; */
+
+/*body*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    ;
+    background-color: #1D1616
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: #D84040;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+h2 {
+    color: orange;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+h3 {
+    color: #8E1616;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+/*Encabezado*/
+header {
+    background-color: #D84040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.header-logo {
+    width: 15%;
+    margin: 8px;
+    height: 100%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*cuerpo index*/
+
+.banner {
+    width: 100%;
+}
+
+.descripcion h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.noticias {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "texto1 texto2 texto3"
+        "video1 video2 video3";
+
+    grid-template-columns: 25% 40% 25;
+    grid-template-rows: 70px 100px 300px;
+    column-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo-novedades {
+    grid-area: titulo;
+}
+
+.texto-video-1 {
+    grid-area: texto1;
+}
+
+.texto-video-2 {
+    grid-area: texto2;
+}
+
+.texto-video-3 {
+    grid-area: texto3;
+}
+
+.video-1 {
+    grid-area: video1;
+}
+
+.video-2 {
+    grid-area: video2;
+}
+
+.video-3 {
+    grid-area: video3;
+}
+
+/*Pie de pagina*/
+footer {
+    background-color: #D84040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.twitter {
+    width: 60px;
+    margin-top: 15px;
+    margin: 10px;
+}
+
+.facebook {
+    width: 60px;
+    margin-top: 15px;
+    margin: 10px;
+}
+
+.instagram {
+    width: 60px;
+    margin-top: 15px;
+    margin: 10px;
+}
+
+
+/*Cuerpo Contacto*/
+
+.redes-contacto h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos-contacto {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.facebook-contacto {
+    width: 55px;
+    margin-top: 15px;
+}
+
+.instagram-contacto {
+    width: 90px;
+    margin-top: 15px;
+}
+
+.formulario-contactos {
+    font-size: large;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+
+}
+
+.formulario-contactos p {
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+/*top sagas cuerpo*/
+.top-sagas h1 {
+    color: #D84040;
+    font-size: 80px;
+    text-decoration: underline;
+}
+
+.top-sagas h2 {
+    color: orange;
+    font-size: 40px;
+    text-decoration: dashed underline;
+    text-decoration-color: orange;
+}
+
+.top-sagas h3 {
+    color: #8E1616;
+    font-size: 20px;
+    text-decoration: solid underline;
+    text-decoration-color: #8E1616;
+}
+
+.top-sagas ul {
+    list-style: upper-roman;
+    color: white;
+}
+
+/*Mugiwaras*/
+.mugiwaras h1 {
+    color: #D84040;
+    font-size: 80px;
+    text-decoration: solid underline;
+    text-decoration-color: #D84040;
+}
+
+.mugiwaras h2 {
+    color: orange;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.mugiwaras p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.luffy {
+    width: 500px;
+}
+
+.zoro {
+    width: 500px;
+}
+
+.nami {
+    width: 500px;
+}
+
+.sanji {
+    width: 500px;
+}
+
+/*Oda*/
+
+.oda h1 {
+    color: #D84040;
+    font-size: 80px;
+    text-decoration: solid underline;
+    text-decoration-color: #D84040;
+}
+
+.oda h2 {
+    color: orange;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.oda p {
+    color: white;
+    font-size: 20px;
+}
+
+/* mediaQ */
