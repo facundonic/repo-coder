@@ -22,18 +22,33 @@
   <!--Encabezado-->
   <header>
 
-    <!--Logo-->
-    <img class="header-logo" src="./archivos/logo.png" alt="Logo de One Piece">
-
-    <!--Navegacion-->
-    <nav>
-      <ul>
-        <li><a href="./paginas/contacto.html">Contacto</a></li>
-        <li><a href="./paginas/topsagas.html">Top 3 Sagas</a></li>
-        <li><a href="./paginas/mangaka.html">Mangaka</a></li>
-        <li><a href="./paginas/mugiwaras.html">Mugiwaras</a></li>
-
-      </ul>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo-header" src="archivos/logo.png"
+            alt="logo-op"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="paginas/mangaka.html">Mangaka</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="paginas/topsagas.html">Topsagas</a>
+            <li class="nav-item me-lg-4">
+              <a class="nav-link" href="paginas/mugiwaras.html">Mugiwaras</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -78,7 +93,7 @@
   </main>
 
   <!--Pie de pagina-->
-  <Footer>
+  <footer>
 
     <h2>Redes oficiales de One Piece</h2>
     <a href="https://x.com/onepieceoficiai?lang=bn" target="_blank"><img class="twitter" src="./archivos/logox.png"
@@ -89,7 +104,7 @@
         src="./archivos/logoinstagram.png" alt="Instagram"></a>
     <p>Copyright Gandhi Corps 2025</p>
 
-  </Footer>
+  </footer>
 
   <!--Scripts bs-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
