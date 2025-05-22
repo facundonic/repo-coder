@@ -83,9 +83,22 @@ nav a {
     width: 100%;
 }
 
+.descripcion p {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
 .descripcion h1 {
     display: flex;
     justify-content: center;
+}
+
+.noticias h3 {
+    color: #8E1616;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .noticias {
@@ -183,10 +196,15 @@ footer {
 }
 
 .formulario-contactos {
+    display: flex;
+    flex-direction: column;
     font-size: large;
     color: white;
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 50px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+
 
 }
 
@@ -197,8 +215,32 @@ footer {
     margin-bottom: 10px;
 }
 
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*footer contacto*/
+
+.footer-contacto {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: #D84040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
 /*top sagas cuerpo*/
 .top-sagas h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #D84040;
     font-size: 80px;
     text-decoration: underline;
@@ -207,7 +249,7 @@ footer {
 .top-sagas h2 {
     color: orange;
     font-size: 40px;
-    text-decoration: dashed underline;
+    text-decoration: underline;
     text-decoration-color: orange;
 }
 
@@ -223,19 +265,47 @@ footer {
     color: white;
 }
 
+.marineford {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ennieslobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wholecake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Mugiwaras*/
+
+.mugiwaras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .mugiwaras h1 {
-    color: #D84040;
+    color: orange;
     font-size: 80px;
     text-decoration: solid underline;
-    text-decoration-color: #D84040;
+    text-decoration-color: orange;
 }
 
 .mugiwaras h2 {
-    color: orange;
+    color: skyblue;
     font-size: 40px;
     text-decoration: underline;
-    text-decoration-color: orange;
+    text-decoration-color: skyblue;
 }
 
 .mugiwaras p {
@@ -262,18 +332,22 @@ footer {
 
 /*Oda*/
 
+.oda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
 .oda h1 {
-    color: #D84040;
+    color: orange;
     font-size: 80px;
-    text-decoration: solid underline;
-    text-decoration-color: #D84040;
 }
 
 .oda h2 {
-    color: orange;
+    color: skyblue;
     font-size: 40px;
-    text-decoration: underline;
-    text-decoration-color: orange;
+
 }
 
 .oda p {
