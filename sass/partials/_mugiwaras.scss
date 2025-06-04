@@ -1,0 +1,44 @@
+/*Mugiwaras*/
+
+.mugiwaras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: orange;
+        font-size: 80px;
+        text-decoration: solid underline;
+        text-decoration-color: orange;
+    }
+
+    h2 {
+        color: skyblue;
+        font-size: 40px;
+        text-decoration: underline;
+        text-decoration-color: skyblue;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+.luffy {
+    width: 500px;
+}
+
+.zoro {
+    width: 500px;
+}
+
+.nami {
+    width: 500px;
+}
+
+.sanji {
+    width: 500px;
+}

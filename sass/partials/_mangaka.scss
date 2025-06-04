@@ -1,0 +1,23 @@
+/*Oda*/
+
+.oda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: orange;
+        font-size: 80px;
+    }
+
+    h2 {
+        color: skyblue;
+        font-size: 40px;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+    }
+}

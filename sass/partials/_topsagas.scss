@@ -1,0 +1,51 @@
+/*top sagas cuerpo*/
+.top-sagas {
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #D84040;
+        font-size: 80px;
+        text-decoration: underline;
+    }
+
+    h2 {
+        color: orange;
+        font-size: 40px;
+        text-decoration: underline;
+        text-decoration-color: orange;
+    }
+
+    h3 {
+        color: #8E1616;
+        font-size: 20px;
+        text-decoration: solid underline;
+        text-decoration-color: #8E1616;
+    }
+
+    ul {
+        list-style: upper-roman;
+        color: white;
+    }
+}
+
+.marineford {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ennieslobby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wholecake {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
