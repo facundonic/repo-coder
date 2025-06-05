@@ -1,6 +1,7 @@
 /*Encabezado*/
+@use "./variables" as *;
 header {
-    background-color: #D84040;
+    background-color: $rojo-claro;
 
     .logo-header {
         width: 150px;
@@ -10,7 +11,7 @@ header {
 
 /*Pie de página*/
 footer {
-    background-color: #D84040;
+    background-color: $rojo-claro;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,14 +25,10 @@ footer {
     }
 
     .facebook {
-        width: 60px;
-        margin-top: 15px;
-        margin: 10px;
+        @extend .twitter;
     }
 
     .instagram {
-        width: 60px;
-        margin-top: 15px;
-        margin: 10px;
+        @extend .twitter;
     }
 }

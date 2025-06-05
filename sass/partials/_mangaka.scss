@@ -1,23 +1,19 @@
 /*Oda*/
-
+@use "./variables" as *;
 .oda {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    
+    @include flex (column, center, center);
+    
     h1 {
-        color: orange;
-        font-size: 80px;
+        @include titulos(orange, 80px, underline, orange);
     }
 
     h2 {
-        color: skyblue;
-        font-size: 40px;
+        @include titulos(skyblue, 40px, none, none);
     }
 
     p {
-        color: white;
+        color: $blanco;
         font-size: 20px;
     }
 }

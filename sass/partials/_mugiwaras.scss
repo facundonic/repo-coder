@@ -1,27 +1,17 @@
 /*Mugiwaras*/
-
+@use "./variables" as *;
 .mugiwaras {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    @include flex (column, center, center);
     h1 {
-        color: orange;
-        font-size: 80px;
-        text-decoration: solid underline;
-        text-decoration-color: orange;
+        @include titulos(orange, 80px, underline, orange);
     }
 
     h2 {
-        color: skyblue;
-        font-size: 40px;
-        text-decoration: underline;
-        text-decoration-color: skyblue;
+        @include titulos(skyblue, 40px, underline, skyblue);
     }
 
     p {
-        color: white;
+        color: $blanco;
         font-size: 20px;
         padding: 10px;
     }
@@ -32,13 +22,13 @@
 }
 
 .zoro {
-    width: 500px;
+    @extend .luffy;
 }
 
 .nami {
-    width: 500px;
+    @extend .luffy;
 }
 
 .sanji {
-    width: 500px;
+    @extend .luffy;
 }

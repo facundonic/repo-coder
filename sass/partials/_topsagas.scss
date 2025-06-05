@@ -1,51 +1,37 @@
 /*top sagas cuerpo*/
+@use "./variables" as *;
 .top-sagas {
     h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #D84040;
+        color: $rojo-claro;
         font-size: 80px;
         text-decoration: underline;
     }
 
     h2 {
-        color: orange;
-        font-size: 40px;
-        text-decoration: underline;
-        text-decoration-color: orange;
+        @include titulos(orange, 40px, underline, orange);
     }
 
     h3 {
-        color: #8E1616;
-        font-size: 20px;
-        text-decoration: solid underline;
-        text-decoration-color: #8E1616;
+        @include titulos($rojo-oscuro, 20px, underline, $rojo-oscuro);
     }
 
     ul {
         list-style: upper-roman;
-        color: white;
+        color: $blanco;
     }
 }
 
 .marineford {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
 }
 
 .ennieslobby {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .marineford;
 }
 
 .wholecake {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .marineford;
 }

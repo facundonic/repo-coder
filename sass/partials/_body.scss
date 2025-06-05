@@ -1,5 +1,5 @@
 /*body*/
-
+@use "./variables" as *;
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +9,17 @@
 body {
     font-family: "Roboto", sans-serif;
     ;
-    background-color: #1D1616
+    background-color: $negro;
 }
 
 p {
-    color: white;
+    color: $blanco;
     margin-top: 10px;
     padding: 10px;
 }
 
 h1 {
-    color: #D84040;
+    color: $rojo-claro;
     font-style: italic;
     font-size: 40px;
     margin-top: 15px;
@@ -34,7 +34,7 @@ h2 {
 }
 
 h3 {
-    color: #8E1616;
+    color: $rojo-oscuro;
     margin-top: 15px;
     text-decoration: underline;
 }

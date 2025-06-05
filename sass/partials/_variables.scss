@@ -4,3 +4,17 @@ $rojo-oscuro: #8E1616;
 $blanco: #EEEEEE;
 
 $font-family: "Roboto", sans-serif;
+
+@mixin titulos ($colores, $tamanio, $decoracion, $color-decoracion) {
+    color: $colores;
+    font-size: $tamanio;
+    text-decoration: $decoracion;
+    text-decoration-color: $color-decoracion;
+}
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

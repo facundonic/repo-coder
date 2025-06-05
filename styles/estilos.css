@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  color: white;
+  color: #EEEEEE;
   margin-top: 10px;
   padding: 10px;
 }
@@ -56,29 +56,18 @@ footer {
   align-items: center;
   margin-top: 30px;
 }
-footer .twitter {
+footer .twitter, footer .instagram, footer .facebook {
   width: 60px;
   margin-top: 15px;
   margin: 10px;
 }
-footer .facebook {
-  width: 60px;
-  margin-top: 15px;
-  margin: 10px;
-}
-footer .instagram {
-  width: 60px;
-  margin-top: 15px;
-  margin: 10px;
-}
-
 /*cuerpo index*/
 .banner {
   width: 100%;
 }
 
 .descripcion p {
-  color: white;
+  color: #EEEEEE;
   font-size: 20px;
   padding: 10px;
   align-items: center;
@@ -102,6 +91,13 @@ footer .instagram {
   color: #8E1616;
   font-size: 20px;
   text-decoration: underline;
+  text-decoration-color: #8E1616;
+}
+.noticias h2 {
+  color: #D84040;
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #D84040;
 }
 
 .titulo-novedades {
@@ -157,14 +153,14 @@ footer .instagram {
   display: flex;
   flex-direction: column;
   font-size: large;
-  color: white;
+  color: #EEEEEE;
   margin-top: 50px;
   padding: 5px;
   align-items: center;
   justify-content: center;
 }
 .formulario-contactos p {
-  color: white;
+  color: #EEEEEE;
   font-size: 20px;
   padding: 0px;
   margin-bottom: 10px;
@@ -173,10 +169,94 @@ footer .instagram {
 .botones {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.redes-nuevo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*Oda*/
 .oda {
   display: flex;
@@ -187,13 +267,17 @@ footer .instagram {
 .oda h1 {
   color: orange;
   font-size: 80px;
+  text-decoration: underline;
+  text-decoration-color: orange;
 }
 .oda h2 {
   color: skyblue;
   font-size: 40px;
+  text-decoration: none;
+  text-decoration-color: none;
 }
 .oda p {
-  color: white;
+  color: #EEEEEE;
   font-size: 20px;
 }
 
@@ -207,7 +291,7 @@ footer .instagram {
 .mugiwaras h1 {
   color: orange;
   font-size: 80px;
-  text-decoration: solid underline;
+  text-decoration: underline;
   text-decoration-color: orange;
 }
 .mugiwaras h2 {
@@ -217,24 +301,12 @@ footer .instagram {
   text-decoration-color: skyblue;
 }
 .mugiwaras p {
-  color: white;
+  color: #EEEEEE;
   font-size: 20px;
   padding: 10px;
 }
 
-.luffy {
-  width: 500px;
-}
-
-.zoro {
-  width: 500px;
-}
-
-.nami {
-  width: 500px;
-}
-
-.sanji {
+.luffy, .sanji, .nami, .zoro {
   width: 500px;
 }
 
@@ -256,29 +328,15 @@ footer .instagram {
 .top-sagas h3 {
   color: #8E1616;
   font-size: 20px;
-  text-decoration: solid underline;
+  text-decoration: underline;
   text-decoration-color: #8E1616;
 }
 .top-sagas ul {
   list-style: upper-roman;
-  color: white;
+  color: #EEEEEE;
 }
 
-.marineford {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.ennieslobby {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.wholecake {
+.marineford, .wholecake, .ennieslobby {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,26 +397,11 @@ footer .instagram {
     margin-bottom: 10px;
   }
   /* Mugiwaras */
-  .luffy {
-    width: 360px;
-  }
-  .zoro {
-    width: 360px;
-  }
-  .nami {
-    width: 360px;
-  }
-  .sanji {
+  .luffy, .sanji, .nami, .zoro {
     width: 360px;
   }
   /* TopSagas */
-  .imgmarineford {
-    width: 340px;
-  }
-  .imgenieslobby {
-    width: 340px;
-  }
-  .imgwholecake {
+  .imgmarineford, .imgwholecake, .imgenieslobby {
     width: 340px;
   }
   .top-sagas h1 {

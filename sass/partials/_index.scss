@@ -1,12 +1,12 @@
 /*cuerpo index*/
-
+@use "./variables" as *;
 .banner {
     width: 100%;
 }
 
 .descripcion {
     p {
-        color: white;
+        color: $blanco;
         font-size: 20px;
         padding: 10px;
         align-items: center;
@@ -33,9 +33,10 @@
     align-items: center;
 
     h3 {
-        color: #8E1616;
-        font-size: 20px;
-        text-decoration: underline;
+        @include titulos($rojo-oscuro, 20px, underline, $rojo-oscuro);
+    }
+    h2 {
+        @include titulos($rojo-claro, 30px, underline, $rojo-claro);
     }
 }
 
