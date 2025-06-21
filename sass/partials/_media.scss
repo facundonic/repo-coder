@@ -7,11 +7,14 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 800;
     }
 
     /* Mangaka */
     .foto-oda {
-        width: 360px;
+        width: 300px;
     }
 
     .oda h1 {
@@ -23,7 +26,7 @@
     }
 
     .mapa-oda {
-        width: 340px;
+        width: 300px;
         height: 330px;
     }
 
@@ -99,32 +102,32 @@
     }
 
     .luffy {
-        width: 360px;
+        width: 300px;
     }
 
     .zoro {
-         width: 360px;
+         width: 300px;
     }
 
     .nami {
-        width: 360px;
+        width: 300px;
     }
 
     .sanji {
-         width: 360px;
+         width: 300px;
     }
 
     /* TopSagas */
     .imgmarineford {
-        width: 340px;
+        width: 300px;
     }
 
     .imgenieslobby {
-        width: 340px;
+        width: 300px;
     }
 
     .imgwholecake {
-        width: 340px;
+        width: 300px;
     }
 
     .top-sagas h1 {
@@ -141,6 +144,9 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 850;
     }
 
     /* Mangaka */
