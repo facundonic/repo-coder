@@ -18,8 +18,13 @@
         font-size: 40px;
     }
 
-    iframe {
-        width: 360px;
+    h2 {
+        text-align: center;
+    }
+
+    .mapa-oda {
+        width: 340px;
+        height: 330px;
     }
 
     /* footer */
@@ -30,6 +35,11 @@
     }
 
     /* index */
+    .banner {
+        width: 100%;
+        height: 150px;
+    }
+    
     .noticias {
         display: grid;
         grid-template-areas:
@@ -47,6 +57,20 @@
         justify-items: center;
         align-items: center;
         text-align: center;
+
+        .video-1 {
+            width: 300px;
+            height: 200px;
+        }
+        .video-2 {
+            width: 300px;
+            height: 200px;
+        }
+        .video-3 {
+            width: 300px;
+            height: 200px;
+        }
+        
     }
 
     /* Contactos */
@@ -70,6 +94,10 @@
     }
 
     /* Mugiwaras */
+    .mugiwaras h1 {
+        font-size: 60px;
+    }
+
     .luffy {
         width: 360px;
     }
