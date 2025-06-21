@@ -1,6 +1,6 @@
 /* mediaQ */
 @use "./variables" as *;
-@media (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
 
     /* header */
     header {
@@ -75,15 +75,15 @@
     }
 
     .zoro {
-        @extend .luffy;
+         width: 360px;
     }
 
     .nami {
-        @extend .luffy;
+        width: 360px;
     }
 
     .sanji {
-        @extend .luffy;
+         width: 360px;
     }
 
     /* TopSagas */
@@ -92,11 +92,117 @@
     }
 
     .imgenieslobby {
-        @extend .imgmarineford;
+        width: 340px;
     }
 
     .imgwholecake {
-        @extend .imgmarineford;
+        width: 340px;
+    }
+
+    .top-sagas h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+    /* header */
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* Mangaka */
+    .foto-oda {
+        width: 360px;
+    }
+
+    .oda h1 {
+        font-size: 40px;
+    }
+
+    iframe {
+        width: 360px;
+    }
+
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* index */
+    .noticias {
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "texto1"
+            "video1"
+            "texto2"
+            "video2"
+            "texto3"
+            "video3";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 300px 100px 300px 100px 300px;
+        column-gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Contactos */
+    textarea {
+        width: 90%;
+        height: 100px;
+    }
+
+    .formulario-contactos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input {
+        width: 90%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    /* Mugiwaras */
+    .luffy {
+        width: 360px;
+    }
+
+    .zoro {
+         width: 360px;
+    }
+
+    .nami {
+         width: 360px;
+    }
+
+    .sanji {
+         width: 360px;
+    }
+
+    /* TopSagas */
+    .imgmarineford {
+        width: 340px;
+    }
+
+    .imgenieslobby {
+        width: 340px;
+    }
+
+    .imgwholecake {
+        width: 340px;
     }
 
     .top-sagas h1 {

@@ -3,6 +3,10 @@
 header {
     background-color: $rojo-claro;
 
+   .nav-link {
+        color: $blanco;
+    }
+
     .logo-header {
         width: 150px;
         height: 100px;
